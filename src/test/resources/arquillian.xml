@@ -5,13 +5,6 @@
         <property name="deploymentExportPath">target</property>
     </engine>
 
-    <extension qualifier="persistence">
-        <property name="defaultDataSource">java:jboss/datasources/ExampleDS</property>
-        <property name="userTransactionJndi">java:jboss/UserTransaction</property>
-        <property name="defaultDataSeedStrategy">CLEAN_INSERT</property>
-        <property name="scriptsToExecuteBeforeTest">scripts/restart-sequence.sql</property>
-    </extension>
-
     <container qualifier="jbossas-remote-7" default="true"/>
 
     <extension qualifier="webdriver">
